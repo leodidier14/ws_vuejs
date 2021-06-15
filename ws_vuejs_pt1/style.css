@@ -1,0 +1,39 @@
+body{
+    margin: 0px !important;
+}
+.nav-bar{
+    background-color : #42b983;
+    height: 60px;
+    width: 100%;
+}
+.article {
+    position: relative;
+    background-color : #81ccaa;
+    padding: 10px;
+    border: #42b983;
+    border-radius: 3px;
+    margin-bottom: 15px;
+
+}
+
+.article-image img{
+    width: 480px;
+    height: 360px;
+    border-radius: 3px;
+
+}
+
+.article-vote{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.article-vote img{
+    width: 30px;
+    height: 30px;
+}
+
+#app{
+    margin: 50px;
+}

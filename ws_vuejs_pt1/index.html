@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Blog des Devs</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="nav-bar"></div>
+        <div id="app">
+            <h1>Nouveaux articles :</h1>
+            <ul>
+                <div v-for="article in articles" class="article">
+                    <div class="article-image">
+                        <img v-bind:src="article.image">
+                    </div>
+                    <div class="article-vote" >
+                        <p v-if="article.isliked"><button v-on:click="likeArticle(article)"><img src="./assets/icones/17304.png"></button></p>
+                        <p v-else><button v-on:click="likeArticle(article)"><img src="./assets/icones/126099.png"></button></p>
+                    </div>
+    
+                    <h2>{{article.titre_article}}</h2>
+                    <p> voici mon {{article.titre_article}}</p>
+                </div>
+            </ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
